@@ -3,7 +3,7 @@ import string
 from evaluation.evaluation_prompt import *
 class Evaluator:
     def __init__(self, args):
-        if args.exam_mode == "social_norm":
+        if args.exam_mode == "social_morality":
             self.choices = ["A", "B", "C"]  # there are three options for professional moral questions
             # because the language of social norm question is en, so we ues prompt of en version
             self.system_prompt = system_prompt_en

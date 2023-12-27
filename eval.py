@@ -141,7 +141,7 @@ if __name__ == "__main__":
         "--gpu_retrieval_id",
         type=str,
         default='0',
-        help="the gpu for retrieval. '-1' means we don't use GPU for retrieval"
+        help="the gpu id for retrieval. '-1' means we don't use GPU for retrieval"
     )
     # parser.add_argument(
     #     "--gpu_model_id",
@@ -181,7 +181,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--temperature",
         type=float,
-        default=0.0
+        default=0
     )
     parser.add_argument(
         "--use_retrieval",
