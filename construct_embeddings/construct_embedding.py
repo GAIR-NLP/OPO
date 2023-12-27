@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../")
 import os
 import json
 import argparse
@@ -65,7 +67,7 @@ def extract_embedding_from_text(data_root_path, embedding_final_save_path,
     """
     data_root_path = data_root_path.format(exam_mode)
 
-    embedding_final_save_path = os.path.join(embedding_final_save_path, exam_mode)
+    # embedding_final_save_path = os.path.join(embedding_final_save_path, exam_mode)
     texts, sources = load_retrieval_data(data_root_path)
 
     # texts = texts[:500]
@@ -122,7 +124,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--exam_modes",
         type=list,
-        default=["social_norm"],
+        default=["professional_morality"],
+        # default=["social_morality", "law_ndlr", "law_ndgr", "basic_morality", "professional_morality"],
         help="choose the exam_mode from [law_ndlr, law_ndgr, basic_morality, professional_morality, social_morality]"
     )
     args = parser.parse_args()

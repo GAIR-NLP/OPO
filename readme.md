@@ -89,15 +89,14 @@ The perfect questions are saved in `./data/exam_questions/machine_generated_{exa
 ## Evaluate different LLMs 
 
 ### For open-source models
-For example, run the following script for evaluating the safety of THUDM/chatglm2-6b
+For example, run the following script for evaluating the safety of THUDM/chatglm2-6b. (Please note that we utilize the checkpoints of most open-source Language Models (LLMs) that were released prior to October 5th.)
 ```shell
 python eval.py \
     --evaluation_model THUDM/chatglm2-6b \
     --model_path chatglm2-6b_path \
     --exam_mode law \
     --question_mode human_annotated\
-    --gpu_retrieval_id 0 \
-    --temperature 0.0  \
+    --temperature 0  \
     --use_retrieval
 ```
 #### Arguments
@@ -118,7 +117,7 @@ python eval.py \
     --exam_mode law \
     --question_mode human_annotated\
     --gpu_retrieval_id 0 \
-    --temperature 0.0  \
+    --temperature 0  \
     --use_retrieval
 ```
 The evaluation results would be saved to `./data/experimental_results` folder.

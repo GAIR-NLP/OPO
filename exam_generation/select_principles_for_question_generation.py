@@ -1,5 +1,6 @@
 import json
 import sys
+sys.path.append("../")
 import os
 
 import cn2an
