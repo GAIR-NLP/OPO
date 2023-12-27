@@ -89,7 +89,7 @@ The perfect questions are saved in `./data/exam_questions/machine_generated_{exa
 ## Evaluate different LLMs 
 
 ### For open-source models
-For example, run the following script for evaluating the safety of THUDM/chatglm2-6b. (Please note that we utilize the checkpoints of most open-source LLMs that were released prior to October 5th.)
+For example, run the following script for evaluating the safety of THUDM/chatglm2-6b. (Please note that most open-source LLMs' checkpoints, utilized in the experiments, were released prior to October 5th.)
 ```shell
 python eval.py \
     --evaluation_model THUDM/chatglm2-6b \
