@@ -1,5 +1,5 @@
 # Align on the Fly: Adapting Chatbot Behavior to Established Norms
-This is the official repository for **Align on the Fly: Adapting Chatbot Behavior to Established Norms**.
+This is the official repository for [Align on the Fly: Adapting Chatbot Behavior to Established Norms](https://arxiv.org/pdf/2312.15907.pdf).
 
 
 
@@ -34,7 +34,7 @@ cd construct_embeddings
 python construct_embedding.py
 python combine_ndlr_ndgr_rules.py
 ```
-We also provide the extracted embeddings for download, available [here](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EYfgU1VuSIdBidnINBB8IZgByQLPDhHKfhk-xrc8ixqAEw?e=xw01Nx). Then unzip the file to the `./data/retrieval_processed_embed_text` folder.
+We also provide the extracted embeddings for download, available [here](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EYfgU1VuSIdBidnINBB8IZgByQLPDhHKfhk-xrc8ixqAEw?e=xw01Nx). Then unzip the file to the `./data/retrieval_processed_embed_text` folder. Besides, Download the file recording the sequence and scope of legal provisions from the [link](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EUJFH6T4PzlOqyTBhRP25lABSuaLefD-djKgGlcSvYc0zw?e=Dpnwtd), and place the file into the `./data/retrieval_source_info` folder.
 
 ### Evaluation datasets
 Five evaluation datasets (i.e., H-Law, A-Law, H-Basic-Morality, H-Social-Morality and A-Professional-Morality) are provided in `./data/exam_questions` folder.
