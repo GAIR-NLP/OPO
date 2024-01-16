@@ -58,7 +58,7 @@ class Weight_Model_Evaluator(Evaluator):
         model_path = args.model_path if args.model_path else args.evaluation_model
         self.tokenizer = tokenizer_class.from_pretrained(model_path, trust_remote_code=True)
         # self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.model = model_class.from_pretrained(model_path,device_map="auto", torch_dtype=torch.float16, trust_remote_code=True)
+        self.model = model_class.from_pretrained(model_path, device_map="auto", torch_dtype=torch.float16, trust_remote_code=True)
         self.generation_config = GenerationConfig(
             temperature=0,
             top_k=40,

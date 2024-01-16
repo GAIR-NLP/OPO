@@ -2,3 +2,7 @@ torch>=2.0.1+cu118
 transformers==4.33.1
 faiss-gpu==1.7.2
 openai==0.28.1
+pandas
+tiktoken
+jsonlines
+accelerate
