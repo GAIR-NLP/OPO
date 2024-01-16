@@ -12,7 +12,7 @@ we propose an On-the-fly Preference Optimization (OPO) method, which is a real-t
 ## Quick start
 ### Setup
 ```bash
-git clone git@github.com:GAIR-NLP/OPO.git
+git clone https://github.com/GAIR-NLP/OPO
 cd OPO
 pip install -r requirements.txt
 ```
