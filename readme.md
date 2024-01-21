@@ -23,7 +23,7 @@ export OPENAI_API_KEY=xxxx
 ```
 
 ### Rule Data
-Download the legal rules and moral rules from the [link](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EfmhLIP-HSdKjrqAu6Ey_4IB8nkmtPyeIoCGR-ffU-61aw?e=yvuLFN)
+Download the legal rules and moral rules from the [link](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/Ee1nwUTx0AlBs7dyliCPOasBu2LPbwGZLiVGNCkh7G9vuA?e=6gH2aH)
 and unzip the file to the `./data/retrieval_raw_data` folder.
 
 
@@ -34,7 +34,7 @@ cd construct_embeddings
 python construct_embedding.py
 python combine_ndlr_ndgr_rules.py
 ```
-We also provide the extracted embeddings for download, available [here](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EYfgU1VuSIdBidnINBB8IZgByQLPDhHKfhk-xrc8ixqAEw?e=xw01Nx). Then unzip the file to the `./data/retrieval_processed_embed_text` folder. Besides, download the file recording the order and scope of legal rules from the [link](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EUJFH6T4PzlOqyTBhRP25lABSuaLefD-djKgGlcSvYc0zw?e=Dpnwtd), and place the file into the `./data/retrieval_source_info` folder.
+We also provide the extracted embeddings for download, available [here](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EZ9v7uqycL1HnvijhMttDVABDCeZDp1Q8GtNBfMFzkPezg?e=9p9OGL). Then unzip the file to the `./data/retrieval_processed_embed_text` folder. Besides, download the file recording the order and scope of legal rules from the [link](https://connectpolyu-my.sharepoint.com/:u:/g/personal/21038672r_connect_polyu_hk/EUJFH6T4PzlOqyTBhRP25lABSuaLefD-djKgGlcSvYc0zw?e=Dpnwtd), and place the file into the `./data/retrieval_source_info` folder.
 
 ### Evaluation datasets
 Five evaluation datasets (i.e., H-Law, A-Law, H-Basic-Morality, H-Social-Morality and A-Professional-Morality) are provided in `./data/exam_questions` folder.
